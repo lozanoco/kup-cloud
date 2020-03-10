@@ -1,0 +1,17 @@
+web:
+  build: .
+  ports:
+    - "8080:8089"
+##-- service 4 external mysql database
+#  enviroment:
+#    - SPRING_DATASOURCE_URL: jdbc:mysql://kup-database/
+#  links:
+#    - kup-database
+#kup-database:
+#  image: mysql:5.6
+#  enviroment:
+#    - MYSQL_ROOT_PASSWORD: pass
+#    - MYSQL_DATABASE: test
+#--
+
+

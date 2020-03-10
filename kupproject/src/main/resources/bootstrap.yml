@@ -1,0 +1,9 @@
+
+spring:
+  application:
+    name: kupproject
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URL:http://localhost:8001/eureka/}

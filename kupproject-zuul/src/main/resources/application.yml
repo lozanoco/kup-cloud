@@ -1,0 +1,16 @@
+
+zuul:
+  prefix: /api/
+  ignored-services: '*'
+  sensitive-headers: Cookie,Set-Cookie
+  routes:
+#   name of service, we only have kupproject
+    kup-app:
+      service-id: kupproject
+
+  host:
+    connect-timeout-millis: 60000
+    socket-timeout-millis: 60000
+
+
+
